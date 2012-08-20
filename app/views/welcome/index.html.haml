@@ -1,0 +1,12 @@
+%form{:class =>'well form-inline', :action => 'welcome/execute', 'data-remote' => 'true', :method => :post}
+  %input.input-xlarge{:name => 'command'}
+  %button.btn.btn-primary.btn-large{:id => 'execute'} 
+    Execute the system command
+  %br
+  %br
+  %span.help-desk
+    Please enter the system command and make sure you are using the right command
+
+#output
+#spinner{:style => 'display:none;'}
+  %img{:src => 'http://www.lyricsnmusic.com/images/spinner.gif'}

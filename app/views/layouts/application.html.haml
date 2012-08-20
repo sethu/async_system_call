@@ -1,0 +1,21 @@
+!!!
+%html
+%head
+  %title AsyncSystemCallOut
+  = stylesheet_link_tag    "application"
+  = javascript_include_tag "application"
+  = javascript_include_tag "https://raw.github.com/selvan/jquery-smart-poll/master/lib/jquery.smart-poll.js"
+  = csrf_meta_tags
+%body{:style => "padding-top: 60px"}
+  .topbar
+    .topbar-inner
+      .container
+        %h3 
+          =link_to "AsyncSystemCallOut", "/"
+  .container
+    .content
+      .row
+        .span11
+          = yield
+        .span1
+          &nbsp;

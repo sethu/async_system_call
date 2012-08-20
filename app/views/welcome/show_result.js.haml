@@ -1,0 +1,5 @@
+if ("#{@done}" == "false"){
+$('#output').replaceWith("<div id='output' style='background:#000000;color:#FFFFFF;'>#{escape_javascript( raw(@buffer))}</div>")
+}else{
+$('#spinner').hide()
+}
